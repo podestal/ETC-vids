@@ -1,8 +1,12 @@
+import FetchAndEffect from "./components/tanstack-fetch/FetchAndEffect"
+import AxiosAndEffect from "./components/tanstack-fetch/AxiosAndEffect"
+import TanstackFetching from "./components/tanstack-fetch/TanstackFetching"
+
 
 const App = () => {
   
   return (
-    <h1 className="text-7xl text-red-400">Hola Mundo</h1>
+    <TanstackFetching />
   )
 }
 
