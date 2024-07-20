@@ -26,7 +26,7 @@ const TanstackFetching = () => {
     <div className='flex-col w-full'>
         <h2 className='m-6 text-5xl'>Posts using Tanstack Query</h2>
         <ul className='flex flex-col gap-4 m-6'>
-            {data?.map( post => <li key={post.id}>{post.title}e</li>)}
+            {data?.map( item => <li key={item.id}>{item.title}</li>)}
         </ul>
     </div>
   )

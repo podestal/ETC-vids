@@ -8,6 +8,7 @@ interface Data {
 }
 
 const FetchAndEffect = () => {
+
     const [data, setData] = useState<Data[] | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
@@ -38,7 +39,7 @@ const FetchAndEffect = () => {
     <div className='flex-col w-full'>
         <h2 className='m-6 text-5xl'>Posts using fetch and useEffect</h2>
         <ul className='flex flex-col gap-4 m-6'>
-            {data?.map( post => <li key={post.id}>{post.title}e</li>)}
+            {data?.map( item => <li key={item.id}>{item.title}</li>)}
         </ul>
     </div>
   )
